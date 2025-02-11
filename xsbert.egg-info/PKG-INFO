@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: xsbert
+Version: 0.1.0
+Summary: explainable sentence transformers
+Author: Lucas Moeller
+Author-email: lucasmoeller@me.com
+License: BSD 2-clause
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+Requires-Dist: sentence-transformers
+Requires-Dist: matplotlib
+Requires-Dist: wget

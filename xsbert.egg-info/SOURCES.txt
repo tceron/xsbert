@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+xsbert/__init__.py
+xsbert/eval.py
+xsbert/utils.py
+xsbert.egg-info/PKG-INFO
+xsbert.egg-info/SOURCES.txt
+xsbert.egg-info/dependency_links.txt
+xsbert.egg-info/requires.txt
+xsbert.egg-info/top_level.txt
