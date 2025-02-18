@@ -17,7 +17,7 @@ model = models.XSRoberta(modules=[transformer, pooling])
 model.to(torch.device('cuda:1'))
 
 model.reset_attribution()
-model.init_attribution_to_layer(idx=10, N_steps=100)
+model.init_attribution_to_layer(idx=10, N_steps=50)
 
 def generate_explanation(texta, textb):
     A, tokens_a, tokens_b = model.explain_similarity(
@@ -40,13 +40,14 @@ def retrieve_tokens_high_similarity(A, tokens_a, tokens_b, k):
 
     return list_tokens
 
-df = pd.read_csv('../capture_similarity_between_political_parties/data/sentence_pairs.csv', index_col=0)
+df = pd.read_csv('../capture_similarity_between_political_parties/data/sentence_pairs_10out200.csv', index_col=0)
 print(len(df))
 
 partya= "gruene"
 partyb= "fdp"
 df = df[(df["party1"]==partya)&(df["party2"]==partyb)]
 print(len(df))
+print(df.model.unique())
 
 start_time = time.time()
 party_tokens = defaultdict(list)

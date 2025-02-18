@@ -5,3 +5,5 @@
 *.hydra*
 *wandb*
 *.ipynb_checkpoints*
+*.pkl
+data
